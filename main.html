@@ -1,40 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Grocery List</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Grocery List</h1>
-  <table id="grocery-table">
+  <table>
     <thead>
       <tr>
         <th>Item</th>
         <th>Price</th>
       </tr>
     </thead>
-    <tbody>
+    <tbody id="grocery-body">
       <tr>
-        <td class="item">Apple</td>
-        <td class="price">$1.00</td>
+        <td class="item">Milk</td>
+        <td class="price" contenteditable="true">0</td>
       </tr>
       <tr>
-        <td class="item">Banana</td>
-        <td class="price">$0.50</td>
+        <td class="item">Bread</td>
+        <td class="price" contenteditable="true">0</td>
       </tr>
       <tr>
-        <td class="item">Orange</td>
-        <td class="price">$0.75</td>
+        <td class="item">Eggs</td>
+        <td class="price" contenteditable="true">0</td>
       </tr>
       <tr>
-        <td class="item">Grapes</td>
-        <td class="price">$2.00</td>
+        <td class="item">Butter</td>
+        <td class="price" contenteditable="true">0</td>
+      </tr>
+      <tr>
+        <td class="item">Apples</td>
+        <td class="price" contenteditable="true">0</td>
       </tr>
     </tbody>
   </table>
 
   <button onclick="calculateTotal()">Calculate Total</button>
+  <p id="ans"></p>
 
   <script src="script.js"></script>
 </body>

@@ -1,68 +1,38 @@
-/* General body styling */
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 20px;
-  background-color: #f4f4f9;
+  margin: 20px;
 }
 
-/* Table styling */
 table {
-  width: 100%;
+  width: 50%;
   border-collapse: collapse;
-  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 th, td {
+  border: 1px solid #999;
   padding: 10px;
   text-align: left;
-  border: 1px solid #ddd;
 }
 
-th {
-  background-color: #f2f2f2;
+td.price {
+  background-color: #f9f9f9;
+  cursor: text;
 }
 
-td {
-  background-color: #ffffff;
+td.price:focus {
+  background-color: #e1f5fe;
+  outline: none;
 }
 
-/* Styling for item and price columns */
-.item {
-  font-weight: bold;
-}
-
-.price {
-  color: #2e8b57; /* Greenish color for prices */
-}
-
-/* Button styling */
 button {
   padding: 10px 20px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  cursor: pointer;
   font-size: 16px;
-  margin-top: 20px;
-  border-radius: 5px;
+  cursor: pointer;
 }
 
-button:hover {
-  background-color: #45a049;
-}
-
-/* Styling for the total row */
-tr:last-child td {
+#ans {
+  font-size: 18px;
   font-weight: bold;
-  background-color: #e0ffe0; /* Light green background for total row */
-}
-
-tr:last-child td:first-child {
-  text-align: center;
-}
-
-/* Add some space between the total row and the rest of the table */
-tr:last-child {
-  margin-top: 20px;
+  margin-top: 10px;
 }
