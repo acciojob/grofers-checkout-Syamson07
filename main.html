@@ -1,62 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grofers Checkout</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grocery List</title>
 </head>
 <body>
+  <h1>Grocery List</h1>
+  <table id="grocery-table">
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="item">Apple</td>
+        <td class="prices">$1.00</td>
+      </tr>
+      <tr>
+        <td class="item">Banana</td>
+        <td class="prices">$0.50</td>
+      </tr>
+      <tr>
+        <td class="item">Orange</td>
+        <td class="prices">$0.75</td>
+      </tr>
+      <tr>
+        <td class="item">Grapes</td>
+        <td class="prices">$2.00</td>
+      </tr>
+    </tbody>
+  </table>
 
-    <table id="grocery-table">
-        <tr>
-            <th>Item</th>
-            <th>Price</th>
-        </tr>
-        <tr class="item">
-            <td>Apple</td>
-            <td class="prices">10</td>
-        </tr>
-        <tr class="item">
-            <td>Banana</td>
-            <td class="prices">5</td>
-        </tr>
-        <tr class="item">
-            <td>Carrot</td>
-            <td class="prices">8</td>
-        </tr>
-    </table>
+  <button onclick="calculateTotal()">Calculate Total</button>
 
-    <script>
-        // Function to calculate total price
-        function calculateTotal() {
-            // Select all price cells in the table
-            const prices = document.querySelectorAll('.prices');
-            let totalPrice = 0;
-
-            // Loop through the prices and add them up
-            prices.forEach(price => {
-                totalPrice += parseFloat(price.textContent);  // Convert price to float and sum
-            });
-
-            // Create a new row for the total price
-            const table = document.getElementById('grocery-table');
-            const newRow = document.createElement('tr');
-            const newCell = document.createElement('td');
-            newCell.setAttribute('colspan', '2');  // Make the new cell span both columns
-
-            // Set the content of the new cell to display the total price
-            newCell.textContent = 'Total Price: ' + totalPrice;
-
-            // Append the new cell to the new row
-            newRow.appendChild(newCell);
-
-            // Append the new row to the table
-            table.appendChild(newRow);
-        }
-
-        // Call the function to calculate and display the total price
-        calculateTotal();
-    </script>
-
+  <script src="script.js"></script>
 </body>
 </html>
