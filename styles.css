@@ -1,2 +1,68 @@
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f9;
+}
 
-/* Your CSS Code here. */
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+td {
+  background-color: #ffffff;
+}
+
+/* Styling for item and price columns */
+.item {
+  font-weight: bold;
+}
+
+.price {
+  color: #2e8b57; /* Greenish color for prices */
+}
+
+/* Button styling */
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Styling for the total row */
+tr:last-child td {
+  font-weight: bold;
+  background-color: #e0ffe0; /* Light green background for total row */
+}
+
+tr:last-child td:first-child {
+  text-align: center;
+}
+
+/* Add some space between the total row and the rest of the table */
+tr:last-child {
+  margin-top: 20px;
+}
